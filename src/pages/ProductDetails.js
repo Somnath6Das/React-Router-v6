@@ -20,6 +20,7 @@ export default function ProductDetails() {
             </div>
         </div>
         <Routes>
+               {/* http://localhost:3000/products/:id/offers */}
             <Route path="offers" element={<Offers />} />
         </Routes>
 

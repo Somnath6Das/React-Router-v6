@@ -21,6 +21,7 @@ const About = () => {
   
             <button onClick={() => navigate('/products')}>See our products</button>
             <Routes>
+                 {/* http://localhost:3000/about/:id/offers */}
                 <Route path="offers" element={<Offers/>}/>
             </Routes>
             
