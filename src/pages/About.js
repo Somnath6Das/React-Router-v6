@@ -1,4 +1,4 @@
-import { Route, useNavigate } from "react-router-dom";
+import { Route, useNavigate, Routes } from "react-router-dom";
 
 import Offers from "./Offers";
 
@@ -20,6 +20,9 @@ const About = () => {
             </p>
   
             <button onClick={() => navigate('/products')}>See our products</button>
+            <Routes>
+                <Route path="offers" element={<Offers/>}/>
+            </Routes>
             
         </div>
             );

@@ -1,10 +1,10 @@
 import React from 'react'
-import {Route, useParams, Routes, Link, parsePath } from 'react-router-dom'
+import {Route, useParams, Routes } from 'react-router-dom'
 import Offers from './Offers'
 
 export default function ProductDetails() {
     const { id } = useParams()
-   const { path } = parsePath()
+
  
 
 
@@ -19,10 +19,10 @@ export default function ProductDetails() {
                 <p>The useRouteMatch hook attempts to match the current URL in the same way that a Route would. Its mostly useful for getting access to the match data without actually rendering a Route.The useRouteMatch hook attempts to match the current URL in the same way that a Route would. Its mostly useful for getting access to the match data without actually rendering a Route.The useRouteMatch hook attempts to match the current URL in the same way that a Route would. Its mostly useful for getting access to the match data without actually rendering a Route.</p>
             </div>
         </div>
-        <Link to="/about/offers">Offers</Link>
-            <Routes>
-            <Route path={`${path}/offers`} element={<Offers/>}/>
-            </Routes>
+        <Routes>
+            <Route path="offers" element={<Offers />} />
+        </Routes>
+
     </div> 
   )
 }
